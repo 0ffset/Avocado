@@ -8,7 +8,7 @@ Built by Anton Lundberg, based on Anax by Mikael Roos
 Description
 -----------
 
-Avodado is an easy-to-use web boilerplate. With the simple but
+Avocado is an easy-to-use web boilerplate. With the simple but
 effective tools provided in this standard package you will,
 with only some prior PHP knowledge, be able to assemble a
 decent web page.
