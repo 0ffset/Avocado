@@ -1,0 +1,468 @@
+/**
+ * Imported fonts
+ */
+@font-face{ 
+	font-family: agency;
+	src: url('../fonts/agencyr.woff');
+}
+
+/**
+ * HTML5 elements
+ */
+header,footer,nav,article,section,aside,figure,figcaption,output {
+  display: block;
+} 
+
+/**
+ * General elements
+ */
+html {
+	overflow-y: scroll;
+	font-family: georgia, seriff;
+	font-size: 16px;
+	word-wrap: break-word; /* to avoid ugly overflow, in case super long strings are typed in somewhere */
+	background-color: #fff;
+}
+
+html,body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #fff;
+}
+
+img {
+	border: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0 0 0 1em;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+hr {
+	margin-top: 20px;
+	height: 10px;
+	border: 0;
+	box-shadow: inset 0 10px 10px -10px #000;
+}
+
+a {
+	text-decoration: none;
+	color: #A11B1B;
+}
+a:hover {
+	color: #DE2F2F;
+}
+
+h1 {
+	font-family: agency;
+	font-weight: normal;
+}
+ 
+/**
+ * General layout of the main page elements 
+ */
+#wrapper {
+}
+
+#site-main,#site-footer {
+	margin: 0 auto;
+	width: 960px;
+	padding: 10px;
+}
+ 
+/**
+ * Layout for header
+ */
+#header {
+	width: 100%;
+	height: 100px;
+	background: -webkit-linear-gradient(#e02f2f, #610707); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#e02f2f, #610707); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#e02f2f, #610707); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#e02f2f, #610707); /* Standard syntax */
+}
+#site-header {
+	width: 960px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative; /* So the navbar can be attached to the bottom */
+}
+
+/**
+ * Layout for main navigation bar
+ */
+#site-navbar {
+	width: 100%;
+	height: 30px;
+	font-family: agency;
+	font-size: 25px;
+	clear: both;
+	position: absolute;
+	bottom: 1px;
+}
+#site-nav-left {
+	position: relative;
+	left: 110px;
+	display: inline-block;
+}
+#site-nav-right {
+	float: right;
+	display: inline-block;
+}
+.sitenavbar {
+	height: 30px;
+	margin: 0 auto;
+}
+.sitenavbar a {
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	padding: 3px 7px;
+	color: #fff;
+	background: -webkit-linear-gradient(#871313, #610707); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#871313, #610707); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#871313, #610707); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#871313, #610707); /* Standard syntax */
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.sitenavbar a.selected {
+	background: -webkit-linear-gradient(#2f2f2f, #212121); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2f2f2f, #212121); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2f2f2f, #212121); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2f2f2f, #212121); /* Standard syntax */
+	box-shadow: inset 0 10px 10px #000;
+}
+.sitenavbar a span {
+	display: inline-block;
+	height: 23px;
+}
+.sitenavbar a span img {
+	opacity: 0.7;
+}
+.sitenavbar a span:hover {
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.sitenavbar a span:hover img,.sitenavbar a.selected img {
+	opacity: 1;
+}
+ 
+/**
+ * Layout for main section elements
+ */
+#main {
+	background: url('../img/bg.gif');
+	box-shadow: inset 0 10px 10px -10px #000;
+	padding-bottom: 30px;
+	overflow: auto;
+}
+
+.main-box,.aside-box {
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+	margin: 5px;
+	padding: 1%;
+}
+.main-box {
+	margin-bottom: 20px;
+}
+.main-box {
+	width: 69%;
+}
+.aside-box {
+	width: 24%;
+	float: right;
+	clear: right;
+}
+
+/**
+ * Layout for footer
+ */
+#footer {
+	background: #fff;
+	color: #333;
+	box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.8);
+}
+ 
+#site-footer {
+	/* width is set in Layout of the main page elements  */
+	font-size: 0.8em;
+	padding: 2em 0;
+}
+#site-footer a {
+	opacity: 0.75;
+	color: #333;
+}
+#site-footer a:hover {
+	opacity: 1;
+}
+#site-footer ul {
+	list-style: none;
+	padding-left: 0.5em;
+}
+#site-footer li:before {
+	content: '» ';
+}
+
+#copyright-footer {
+	/* width is set in Layout of the main page elements  */
+	background: -webkit-linear-gradient(#e02f2f, #610707); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#e02f2f, #610707); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#e02f2f, #610707); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#e02f2f, #610707); /* Standard syntax */
+	padding: 10px 0;
+	color: #fff;
+	font-family: agency;
+	font-size: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+#copyright-footer p {
+	margin: 0;
+	text-align: center;
+}
+#copyright-footer a { color: #fff; }
+#copyright-footer a:hover { text-shadow: 0 0 5px #fff; }
+
+
+/**
+ * Style for submit buttons
+ */
+input[type='submit'],input[type='reset'],.button,.button-tiny {
+	display: inline-block;
+	font-family: agency;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 40px;
+	color: #fff;
+	background: -webkit-linear-gradient(#e02f2f, #610707); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#e02f2f, #610707); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#e02f2f, #610707); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#e02f2f, #610707); /* Standard syntax */
+	border: 0;
+	padding: 2px 30px;
+	margin: 5px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+	text-shadow: 1px 1px 3px #000;
+}
+.button-tiny {
+	font-size: 15px;
+	line-height: 20px;
+	padding: 1px 10px;
+	margin: 3px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+input[type='submit'][name='save'] {
+	background-color: #507927;
+	margin-top: 20px;
+}
+input[type='submit'][name='delete'] {
+	background-color: #772827;
+}
+
+input[type='submit']:hover,input[type='reset']:hover,.button:hover,.button-tiny:hover {
+	color: #fff;
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+	background: -webkit-linear-gradient(#FF3D3D, #610707); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#FF3D3D, #610707); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#FF3D3D, #610707); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#FF3D3D, #610707); /* Standard syntax */
+	cursor: pointer;
+}
+input[type='submit']:active,input[type='reset']:active,.button:active,.button-tiny:active {
+	position: relative;
+	top: 1px;
+}
+input[type='submit'][name='save']:hover {
+	background-color: #374C22;
+}
+input[type='submit'][name='delete']:hover {
+	background-color: #492121;
+}
+
+/**
+ * Style for form elements
+ */
+input[type='text'],input[type='password'],select {
+	font-family: georgia;
+}
+input[type='text'],input[type='password'],textarea,select {
+	color: #fff;
+	font-size: 1em;
+	border: 0;
+	padding: 3px;
+	background-color: #A11B1B;
+	border-radius: 5px;
+	box-shadow: inset 0 0 10px #630707;
+	text-shadow: 1px 1px 3px #000;
+}
+input[type='text']:hover,input[type='text']:focus,input[type='password']:hover,input[type='password']:focus,textarea:hover,textarea:focus,select:hover,select:focus {
+	background-color: #DE2F2F;
+}
+input[type='text'],input[type='password'],textarea {
+	width: 75%;
+	margin: 1px 0;
+}
+textarea {
+	height: 200px;
+}
+input::-webkit-input-placeholder {
+	color: rgba(255, 255, 255 , 0.8);
+	font-style: italic;
+	text-shadow: 0 0 0;
+}
+input::-moz-placeholder {
+	color: rgba(255, 255, 255 , 0.8);
+	font-style: italic;
+	text-shadow: 0 0 0;
+}
+
+fieldset {
+	border: 1px solid #630707;
+	border-radius: 5px;
+}
+fieldset[id^='edit-'] {
+	width: 74%;
+	margin: 1em 0;
+}
+fieldset input[type='text'] {
+	width: 99%;
+}
+output {
+	font-size: 1.2em;
+	display: inline-block;
+	border-radius: 10px;
+	position: relative;
+	padding: 0 0.5em 0.5em 0.5em;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-shadow: 1px 1px 3px #000;
+}
+output.success {
+	background-color: #46BF00;
+}
+output.error {
+	background-color: #DA0B0B;
+}
+output.info {
+	background-color: #2AA7DD;
+}
+output.success:before,output.error:before,output.info:before {
+	font-size: 1.5em;
+	position: relative;
+	top: 3px;
+}
+output.success:before {
+	content: '✓ ';
+
+}
+output.error:before {
+	content: '✗ ';
+}
+output.info:before {
+	content: '» ';
+}
+
+/**
+ * Style for tables
+ */
+table {
+	width: 100%;
+	text-align: center;
+}
+th {
+	color: #fff;
+	background: -webkit-linear-gradient(#e02f2f, #610707); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#e02f2f, #610707); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#e02f2f, #610707); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#e02f2f, #610707); /* Standard syntax */
+	border-radius: 5px;
+	text-shadow: 1px 1px 3px #000;
+}
+th a,table.rowlink tr:not(:first-child):hover a  {
+	color: #fff;
+}
+th a:hover,table.rowlink tr:not(:first-child) a:hover  {
+	color: #fff;
+	text-shadow: 0 0 5px #fff;
+}
+th:empty {
+	background: transparent;
+}
+tr:nth-child(even):not(.sum) {
+	background-color: #FFEDED;
+}
+tr:nth-child(odd):not(:first-child):not(.sum) {
+	background-color: #FFD8D8;
+}
+
+table.rowlink tr:not(:first-child):not(.sum):hover {
+	background: -webkit-linear-gradient(#e02f2f, #610707); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#e02f2f, #610707); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#e02f2f, #610707); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#e02f2f, #610707); /* Standard syntax */
+	color: #fff;
+	cursor: pointer;
+	text-shadow: 1px 1px 3px #000;
+}
+
+/**
+ * Style for vertical navigation menus
+ */
+nav.vertical a {
+	display: list-item;
+	list-style: none;
+	padding: 3px 3px 3px 10px;
+	border-radius: 3px;
+}
+nav.vertical a.selected {
+	background: -webkit-linear-gradient(#e02f2f, #610707); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#e02f2f, #610707); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#e02f2f, #610707); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#e02f2f, #610707); /* Standard syntax */
+	color: #fff;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+	text-shadow: 1px 1px 3px #000;
+}
+nav.vertical a:hover {
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/**
+ * Blockquotes
+ */
+blockquote:not(.movie-quote) {
+	border-left: 2px solid #A61D1D;
+	padding-left: 1em;
+}
+
+/**
+ * Miscellaneous classes
+ */
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+.center { text-align: center; }
+.justify { text-align: justify; }
+
+.italic { font-style: italic; }
+.bold { font-weight: bold; }
+
+.small { font-size: 0.8em; }
+.big { font-size: 1.2em; }
+
+.smallprint {
+	font-size: 0.7em;
+	font-style: italic;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.nomargin { margin: 0; }

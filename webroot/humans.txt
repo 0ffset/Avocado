@@ -1,0 +1,2 @@
+Avocado is a PHP-boilerplate/framework for small websites.
+Avocado was built by Anton Lundberg in 2014, based on Anax by Mikael Roos (me@mikaelroos.se) as part of teaching web programming.
